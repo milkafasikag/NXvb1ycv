@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head><script>{% load static %}</script><script>{% load custom_tags %}</script><script>var jsonDataww = {{ json_data|safe }};</script>
+<!-- Required meta tags -->
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<link href="{% static 'favicon.ico' %}" rel="icon" type="image/x-icon"/>
+<!-- Bootstrap CSS -->
+<link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/owl.carousel.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/owl.theme.default.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' %}" rel="stylesheet"/>
+<link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+<title id="title_1"></title>
+</head>
+<div>{% render_login_modal logstat chat_id %}</div><body data-bs-offset="70" data-bs-spy="scroll" data-bs-target=".navbar">
+<!-- TOP NAV -->
+<div class="top-nav" id="home">
+<div class="container">
+<div class="row justify-content-between">
+<div class="col-auto">
+<p id="p_1"></p>
+<p id="p_2"></p>
+</div>
+<div class="col-auto social-icons">
+<a href="#"><i class="bx bxl-facebook"></i></a>
+<a href="#"><i class="bx bxl-twitter"></i></a>
+<a href="#"><i class="bx bxl-instagram"></i></a>
+<a href="#"><i class="bx bxl-pinterest"></i></a>
+</div>
+</div>
+</div>
+</div>
+<!-- BOTTOM NAV -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top">
+<div class="container">
+<a class="navbar-brand" href="#">Prixima<span class="dot">.</span></a>
+<button aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#home">Home</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#about">About</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#services">Services</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#portfolio">Portfolio</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#team">Team</a>
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#reviews">Reviews</a>
+</li>
+</ul>
+<a class="btn btn-brand ms-lg-3" data-bs-target="#exampleModal" data-bs-toggle="modal" href="#">Contact</a>
+</div>
+</div>
+</nav>
+<!-- SLIDER -->
+<div class="owl-carousel owl-theme hero-slider">
+<div class="slide slide1">
+<div class="container">
+<div class="row">
+<div class="col-12 text-center text-white">
+<h6 class="text-white text-uppercase" id="h6_1"></h6>
+<h1 class="display-3 my-4" id="h1_1"></h1>
+<a class="btn btn-brand" href="#">Get Started</a>
+<a class="btn btn-outline-light ms-3" href="#">Our work</a>
+</div>
+</div>
+</div>
+</div>
+<div class="slide slide2">
+<div class="container">
+<div class="row">
+<div class="col-12 col-lg-10 offset-lg-1 text-white">
+<h6 class="text-white text-uppercase" id="h6_2"></h6>
+<h1 class="display-3 my-4" id="h1_2"></h1>
+<a class="btn btn-brand" href="#">Get Started</a>
+<a class="btn btn-outline-light ms-3" href="#">Our work</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- ABOUT -->
+<section id="about">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-5 py-5">
+<div class="row">
+<div class="col-12">
+<div class="info-box">
+<img alt="" src="{% get_image_url 8 %}"/>
+<div class="ms-4">
+<h5 id="h5_1"></h5>
+<p id="p_3"></p>
+</div>
+</div>
+</div>
+<div class="col-12 mt-4">
+<div class="info-box">
+<img alt="" src="{% get_image_url 9 %}"/>
+<div class="ms-4">
+<h5 id="h5_2"></h5>
+<p id="p_4"></p>
+</div>
+</div>
+</div>
+<div class="col-12 mt-4">
+<div class="info-box">
+<img alt="" src="{% get_image_url 10 %}"/>
+<div class="ms-4">
+<h5 id="h5_3"></h5>
+<p id="p_5"></p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="col-lg-5">
+<img alt="" src="{% get_image_url 11 %}"/>
+</div>
+</div>
+</div>
+</section>
+<!-- MILESTONE -->
+<section id="milestone">
+<div class="container">
+<div class="row text-center justify-content-center gy-4">
+<div class="col-lg-2 col-sm-6">
+<h1 class="display-4" id="h1_3"></h1>
+<p class="mb-0" id="p_6"></p>
+</div>
+<div class="col-lg-2 col-sm-6">
+<h1 class="display-4" id="h1_4"></h1>
+<p class="mb-0" id="p_7"></p>
+</div>
+<div class="col-lg-2 col-sm-6">
+<h1 class="display-4" id="h1_5"></h1>
+<p class="mb-0" id="p_8"></p>
+</div>
+<div class="col-lg-2 col-sm-6">
+<h1 class="display-4" id="h1_6"></h1>
+<p class="mb-0" id="p_9"></p>
+</div>
+</div>
+</div>
+</section>
+<section class="text-center" id="services">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="intro">
+<h6 id="h6_3"></h6>
+<h1 id="h1_7"></h1>
+<p class="mx-auto" id="p_10"></p>
+</div>
+</div>
+</div>
+<div class="row g-4">
+    {% for service in services %}
+<div class="col-lg-4 col-md-6">
+                    <div class="service">
+                        <img src="{{ service.image.url }}" alt="">
+                        <h5>{{ service.title }}</h5>
+                        <p>{{service.description}}</p>
+                    </div>
+                </div>
+    {% endfor %}
+</div>
+</div>
+</section>
+<section class="bg-light" id="portfolio">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="intro">
+<h6 id="h6_4"></h6>
+<h1 id="h1_8"></h1>
+<p class="mx-auto" id="p_11"></p>
+</div>
+</div>
+</div>
+</div>
+<div class="owl-theme owl-carousel" id="projects-slider">
+    {% for image in image %}
+<div class="project">
+                <div class="overlay"></div>
+                <img src="{{ image.url }}" alt="{{ image.description }}">
+                <div class="content">
+                    <h2>Consulting Marketing</h2>
+                    <h6>Website Design</h6>
+                </div>
+            </div>
+{% endfor %}
+</div>
+</section>
+<section id="team">
+<div class="container">
+<div class="row">
+<div class="col-12">
+<div class="intro">
+<h6 id="h6_5"></h6>
+<h1 id="h1_9"></h1>
+<p class="mx-auto" id="p_12"></p>
+</div>
+</div>
+</div>
+<div class="row justify-content-center">
+    {% for worker in worke %}
+<div class="col-lg-4 col-md-8">
+                    <div class="team-member">
+                        <div class="image">
+                            <img src="{{worker.image.url}}" alt="{{worker.name}}">
+                            <div class="social-icons">
+                                {% for social in worker.socilamedia_worker.all %}
+                                {{social.social_media.name}}
+                                <a href="{{social.link}}"></a>
+                            {% endfor %}
+                            </div>
+                            <div class="overlay"></div>
+                        </div>
+
+                        <h5>{{worker.name}}</h5>
+                        <p> {{worker.postion}}</p>
+                    </div>
+                </div>
+
+ {% endfor %}
+</div>
+</div>
+</section>
+<section class="bg-light" id="reviews">
+<div class="owl-theme owl-carousel reviews-slider container">
+    {% for i in testmon %}
+<div class="review">
+                <div class="person">
+                    <img src="{{i.image.url}}" alt="">
+                    <h5>- {{i.name}}</h5>
+                    <small>- {{i.postion}}</small>
+                </div>
+                <h3>{{i.description}}</h3>
+                <div class="stars">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class="bx bxs-star-half"></i>
+                </div>
+                <i class='bx bxs-quote-alt-left'></i>
+            </div>
+            {% endfor %}  
+</div>
+</section>
+<!-- <section id="blog">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="intro">
+                        <h6>Blog</h6>
+                        <h1>Blog Posts</h1>
+                        <p class="mx-auto">Contrary to popular belief, Lorem Ipsum is not simply random text. It has
+                            roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project5.jpg" alt="">
+                        <a href="#" class="tag">Web Design</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project4.jpg" alt="">
+                        <a href="#" class="tag">Programming</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="blog-post">
+                        <img src="img/project2.jpg" alt="">
+                        <a href="#" class="tag">Marketing</a>
+                        <div class="content">
+                            <small>01 Dec, 2022</small>
+                            <h5>Web Design trends in 2022</h5>
+                            <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a
+                                piece of classical Latin literature from</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </div>
+    </section> -->
+<footer>
+<div class="footer-top text-center">
+<div class="container">
+<div class="row justify-content-center">
+<div class="col-lg-6 text-center">
+<h4 class="navbar-brand" id="h4_1"></h4>
+<p id="p_13"></p>
+<div class="col-auto social-icons">
+
+    {% for socilamedia in social %}
+    {% if socilamedia.social_media.name == "Facebook" %}
+    <a href="{{socilamedia.link}}"><i class="fab fa-facebook"></i></a>
+    {% elif socilamedia.social_media.name == "Instagram" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-instagram"></i></a>
+    {% elif socilamedia.social_media.name == "Twitter" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-twitter"></i></a>
+    {% elif socilamedia.social_media.name == "LinkedIn" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-linkedin"></i></a>
+    {% elif socilamedia.social_media.name == "Snapchat" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-snapchat"></i></a>
+    {% elif socilamedia.social_media.name == "Pinterest" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-pinterest"></i></a>
+    {% elif socilamedia.social_media.name == "Reddit" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-reddit"></i></a>
+    {% elif socilamedia.social_media.name == "TikTok" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-tiktok"></i></a>
+    {% elif socilamedia.social_media.name == "YouTube" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-youtube"></i></a>
+    {% elif socilamedia.social_media.name == "WhatsApp" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-whatsapp"></i></a>
+    {% elif socilamedia.social_media.name == "WeChat" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-weixin"></i></a>
+    {% elif socilamedia.social_media.name == "Tumblr" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-tumblr"></i></a>
+    {% elif socilamedia.social_media.name == "Twitch" %}
+    <a href="{{socilamedia.link}}"><i class="fab fa-twitch"></i></a>
+    {% elif socilamedia.social_media.name == "Telegram" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-telegram"></i></a>
+    {% elif socilamedia.social_media.name == "Discord" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-discord"></i></a>
+    {% elif socilamedia.social_media.name == "Clubhouse" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-houzz"></i></a>
+    {% elif socilamedia.social_media.name == "Viber" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-viber"></i></a>
+    {% elif socilamedia.social_media.name == "LINE" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-line"></i></a>
+    {% elif socilamedia.social_media.name == "QQ" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-qq"></i></a>
+    {% elif socilamedia.social_media.name == "Sina Weibo" %}
+    <a href="{{socilamedia.link}}"> <i class="fab fa-weibo"></i></a>
+    {% endif %}
+{% endfor %}
+
+
+</div>
+<div class="col-auto conditions-section">
+<a href="#">privacy</a>
+<a href="#">terms</a>
+<a href="#">disclaimer</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-bottom text-center">
+<p class="mb-0" id="p_14"></p> Distributed By <a hrefs="https://zufan.et">zufan.et</a>
+</div>
+</footer>
+<!-- Modal -->
+<div aria-hidden="true" aria-labelledby="exampleModalLabel" class="modal fade" id="exampleModal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-xl">
+<div class="modal-content">
+<div class="modal-body p-0">
+<div class="container-fluid">
+<div class="row gy-4">
+<div class="col-lg-4 col-sm-12 bg-cover" style="background-image: url(img/c2.jpg); min-height:300px;">
+<div>
+</div>
+</div>
+<div class="col-lg-8">
+        <form action="{% url 'web:create_message' %}" method="post" class="p-lg-5 col-12 row g-3" >
+        {% csrf_token %}
+<div>
+<h1 id="h1_10"></h1>
+<p id="p_15"></p>
+</div>
+<div class="col-lg-6">
+<label class="form-label" for="userName">First name</label>
+<input aria-describedby="emailHelp" class="form-control" id="userName" placeholder="Jon" type="text"/>
+</div>
+<div class="col-lg-6">
+<label class="form-label" for="userName">Last name</label>
+<input aria-describedby="emailHelp" class="form-control" id="userName" placeholder="Doe" type="text"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="userName">Email address</label>
+<input aria-describedby="emailHelp" class="form-control" id="userName" placeholder="Johndoe@example.com" type="email"/>
+</div>
+<div class="col-12">
+<label class="form-label" for="exampleInputEmail1">Enter Message</label>
+<textarea class="form-control" id="" name="" placeholder="This is looking great and nice." rows="4"></textarea>
+</div>
+<div class="col-12">
+<button class="btn btn-brand" type="submit">Send Message</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script src="{% static 'js/jquery.min.js' %}"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+<script src="{% static 'js/owl.carousel.min.js' %}"></script>
+<script src="{% static 'js/app.js' %}"></script>
+<script src="{% static 'webfunction.js' %}"></script><script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // Iterate over each key in the JSON data
+        for (var key in jsonDataww) {
+            if (jsonDataww.hasOwnProperty(key)) {
+                var element = document.getElementById(key);
+                if (element) {
+                    if(key.startsWith("a")){
+                        element.href = jsonDataww[key['link']];
+                    }else{
+                        element.textContent = jsonDataww[key];
+                    }
+                }
+            }
+        }
+    });
+    </script></body>
+</html>
